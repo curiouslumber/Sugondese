@@ -9,29 +9,28 @@ import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.ForegroundColorSpan;
 import android.view.View;
-import android.view.Window;
 import android.widget.TextView;
-import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class RegisterPage extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_register_page);
 
-        TextView signUpTV = findViewById(R.id.textView);
+        TextView textView = findViewById(R.id.textView2);
 
-        String text = "Not a user yet? Sign Up";
+        String text = "Already a user? Sign In";
         SpannableString spannableString = new SpannableString(text);
         ForegroundColorSpan foregroundColorSpanYellow = new ForegroundColorSpan(Color.parseColor("#FF9700"));
         spannableString.setSpan(foregroundColorSpanYellow, 16, 23, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-        signUpTV.setText(spannableString);
+        textView.setText(spannableString);
 
-        signUpTV.setOnClickListener(
+        textView.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        startActivity(new Intent(MainActivity.this, RegisterPage.class));
+                        startActivity(new Intent(RegisterPage.this, MainActivity.class));
                     }
                 }
         );

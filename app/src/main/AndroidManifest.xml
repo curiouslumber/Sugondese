@@ -10,9 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sugondese">
         <activity
+            android:name=".RegisterPage"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
-            android:exported="true"
-            >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
