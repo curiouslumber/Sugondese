@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1000339129919",
+    "project_id": "sugondese-7074f",
+    "storage_bucket": "sugondese-7074f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000339129919:android:ec30bb56985a196b485a8a",
+        "android_client_info": {
+          "package_name": "com.example.sugondese"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1000339129919-7bli8051benf6o1hvshq0j796begpk60.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2s52I6rCi5lYOeYJbknw3-YR14Ns-CkA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1000339129919-7bli8051benf6o1hvshq0j796begpk60.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
