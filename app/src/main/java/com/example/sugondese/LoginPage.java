@@ -29,6 +29,7 @@ public class LoginPage extends AppCompatActivity {
     Button mSign_inBtn;
     ProgressBar progressBar;
     FirebaseAuth fAuth;
+    TextView mForgotPassword;
 
 
 
@@ -41,6 +42,8 @@ public class LoginPage extends AppCompatActivity {
         setContentView(R.layout.activity_login_page);
         TextView signUpTV = findViewById(R.id.textView);
 
+
+        mForgotPassword = findViewById(R.id.forgotPassword);
         mEmail = findViewById(R.id.editTextEmail);
         mPassword = findViewById(R.id.editTextPassword);
         progressBar = findViewById(R.id.progressBar2);
@@ -62,6 +65,13 @@ public class LoginPage extends AppCompatActivity {
                     }
                 }
         );
+
+        mForgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LoginPage.this, ForgotPassword.class));
+            }
+        });
 
         mSign_inBtn.setOnClickListener(new View.OnClickListener() {
             @Override
