@@ -68,6 +68,7 @@ public class ForgotPassword extends AppCompatActivity {
         forgetBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 validateData();
             }
         });

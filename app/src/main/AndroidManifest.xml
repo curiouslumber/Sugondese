@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sugondese">
         <activity
+            android:name=".MyAccount"
+            android:exported="false" />
+        <activity
             android:name=".ForgotPassword"
             android:exported="false" />
         <activity
@@ -28,7 +31,7 @@
             android:exported="true" />
         <activity
             android:name=".LoginPage"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
