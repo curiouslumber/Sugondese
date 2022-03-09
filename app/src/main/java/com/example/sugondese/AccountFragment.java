@@ -32,6 +32,17 @@ public class AccountFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+//        Btn = Btn.findViewById(R.id.logButton);
+//
+//        Btn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(getActivity(),LoginPage.class);
+//                startActivity(intent);
+//            }
+//        });
+
+
     }
 
     @Override
@@ -40,7 +51,7 @@ public class AccountFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_account, container, false);
 
-        Button testBtn = view.findViewById(R.id.alogButton);
+        Button testBtn = view.findViewById(R.id.fragment_account_alogButton);
 
            testBtn.setOnClickListener(
                    new View.OnClickListener() {

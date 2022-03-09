@@ -36,15 +36,15 @@ public class LoginPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_page);
-        TextView signUpTV = findViewById(R.id.textView);
+        TextView signUpTV = findViewById(R.id.activity_login_page_textView);
 
 
-        mForgotPassword = findViewById(R.id.forgotPassword);
-        mEmail = findViewById(R.id.editTextEmail);
-        mPassword = findViewById(R.id.editTextPassword);
-        progressBar = findViewById(R.id.progressBar2);
+        mForgotPassword = findViewById(R.id.activity_login_page_forgotPassword);
+        mEmail = findViewById(R.id.activity_login_page_editTextEmail);
+        mPassword = findViewById(R.id.activity_login_page_editTextPassword);
+        progressBar = findViewById(R.id.activity_login_page_progressBar2);
         fAuth = FirebaseAuth.getInstance();
-        mSign_inBtn = findViewById(R.id.sign_button);
+        mSign_inBtn = findViewById(R.id.activity_login_page_sign_button);
 
 
         String text = "Not a user yet? Sign Up";

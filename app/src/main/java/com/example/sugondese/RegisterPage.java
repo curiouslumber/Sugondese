@@ -52,13 +52,13 @@ public class RegisterPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_page);
 
-        mName = findViewById(R.id.editTextName);
-        mEmail = findViewById(R.id.editTextEmail);
-        mPassword = findViewById(R.id.editTextRPassword);
-        mPassword2 = findViewById(R.id.editTextRPassword2);
-        mPhoneNo = findViewById(R.id.editTextPhoneNo);
-        RegisterBtn = findViewById(R.id.button2);
-        progressBar = findViewById(R.id.progressBar);
+        mName = findViewById(R.id.activity_register_page_editTextName);
+        mEmail = findViewById(R.id.activity_register_page_editTextEmail);
+        mPassword = findViewById(R.id.activity_register_page_editTextRPassword);
+        mPassword2 = findViewById(R.id.activity_register_page_editTextRPassword2);
+        mPhoneNo = findViewById(R.id.activity_register_page_editTextPhoneNo);
+        RegisterBtn = findViewById(R.id.activity_register_page_button2);
+        progressBar = findViewById(R.id.activity_register_page_progressBar);
 
 //        mPhoneNo.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_VARIATION_PASSWORD );
 
@@ -69,7 +69,7 @@ public class RegisterPage extends AppCompatActivity {
 //            finish();
 //        }
 
-        TextView textView = findViewById(R.id.textView2);
+        TextView textView = findViewById(R.id.activity_register_page_textView2);
 
         String text = "Already a user? Sign In";
         SpannableString spannableString = new SpannableString(text);

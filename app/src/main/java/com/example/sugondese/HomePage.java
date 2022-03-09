@@ -22,8 +22,8 @@ public class HomePage extends AppCompatActivity {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         setContentView(R.layout.activity_home_page);
 
-        homepageIconBtn = findViewById(R.id.homeFragmentBtn);
-        profileIconBtn = findViewById(R.id.profileFragmentBtn);
+        homepageIconBtn = findViewById(R.id.activity_home_page_homeFragmentBtn);
+        profileIconBtn = findViewById(R.id.activity_home_page_profileFragmentBtn);
         replaceFragment(new HomePageFragment());
 
         homepageIconBtn.setOnClickListener(
@@ -49,7 +49,7 @@ public class HomePage extends AppCompatActivity {
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.frameLayout,fragment);
+        fragmentTransaction.replace(R.id.activity_home_page_frameLayout,fragment);
         fragmentTransaction.commit();
 
     }
