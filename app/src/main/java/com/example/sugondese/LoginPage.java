@@ -111,6 +111,7 @@ public class LoginPage extends AppCompatActivity {
 
                         else {
                             Toast.makeText(LoginPage.this, "Error !" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                            progressBar.setVisibility(View.GONE);
                         }
                     }
                 });
