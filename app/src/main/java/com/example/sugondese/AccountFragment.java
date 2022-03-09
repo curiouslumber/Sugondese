@@ -28,6 +28,7 @@ public class AccountFragment extends Fragment {
     FirebaseFirestore fStore;
     String userID;
 
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
