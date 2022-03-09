@@ -32,10 +32,6 @@ public class LoginPage extends AppCompatActivity {
     TextView mForgotPassword;
 
 
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -109,7 +105,7 @@ public class LoginPage extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
                             Toast.makeText(LoginPage.this, "Login Success", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(),MyAccount.class));
+                            startActivity(new Intent(getApplicationContext(), HomePage.class));
                             progressBar.setVisibility(View.GONE);
                         }
 

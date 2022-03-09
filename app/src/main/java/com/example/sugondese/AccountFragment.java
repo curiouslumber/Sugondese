@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
@@ -38,9 +39,18 @@ public class AccountFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_account, container, false);
 
+        Button testBtn = view.findViewById(R.id.alogButton);
+
+           testBtn.setOnClickListener(
+                   new View.OnClickListener() {
+                       @Override
+                       public void onClick(View view) {
+                           startActivity(new Intent( AccountFragment.this.getContext()  ,LoginPage.class));
+                       }
+                   }
+           );
 
 
-
-            return view;
+        return view;
     }
 }
