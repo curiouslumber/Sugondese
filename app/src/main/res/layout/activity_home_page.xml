@@ -44,13 +44,13 @@
                 >
 
                 <ImageView
-                    android:id="@+id/imageView2"
+                    android:id="@+id/activity_home_page_imageView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/home_icon" />
 
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/activity_home_page_textView4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Home"
@@ -65,14 +65,14 @@
                 >
 
                 <ImageView
-                    android:id="@+id/imageView3"
+                    android:id="@+id/activity_home_page_imageView3"
                     android:layout_width="match_parent"
                     android:layout_height="34dp"
                     android:layout_marginBottom="5dp"
                     app:srcCompat="@drawable/order_icon" />
 
                 <TextView
-                    android:id="@+id/textView9"
+                    android:id="@+id/activity_home_page_textView9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Order"
@@ -89,7 +89,7 @@
                 >
 
                 <ImageView
-                    android:id="@+id/imageView4"
+                    android:id="@+id/activity_home_page_imageView4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/list_icon"
@@ -97,7 +97,7 @@
                     />
 
                 <TextView
-                    android:id="@+id/textView6"
+                    android:id="@+id/activity_home_page_textView6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="My List"
@@ -113,14 +113,14 @@
                 >
 
                 <ImageView
-                    android:id="@+id/imageView5"
+                    android:id="@+id/activity_home_page_imageView5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/profile_icon"
                     />
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/activity_home_page_textView5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Profile"
