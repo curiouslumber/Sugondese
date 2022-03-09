@@ -51,7 +51,7 @@ public class AccountFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_account, container, false);
 
-        Button testBtn = view.findViewById(R.id.alogButton);
+        Button testBtn = view.findViewById(R.id.fragment_account_alogButton);
 
            testBtn.setOnClickListener(
                    new View.OnClickListener() {

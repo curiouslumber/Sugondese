@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <FrameLayout
-            android:id="@+id/frameLayout"
+            android:id="@+id/activity_home_page_frameLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1">
@@ -40,7 +40,7 @@
                 android:layout_weight="1"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:id="@+id/homeFragmentBtn"
+                android:id="@+id/activity_home_page_homeFragmentBtn"
                 >
 
                 <ImageView
@@ -109,7 +109,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:id="@+id/profileFragmentBtn"
+                android:id="@+id/activity_home_page_profileFragmentBtn"
                 >
 
                 <ImageView
