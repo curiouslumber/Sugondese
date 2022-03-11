@@ -9,7 +9,7 @@
 
 
     <ImageView
-        android:id="@+id/activity_forgot_password_imageView"
+        android:id="@+id/fragment_account_imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="App Logo"
@@ -19,6 +19,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.128"
         app:srcCompat="@drawable/app_logo" />
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="129dp"
+        android:layout_height="132dp"
+        android:contentDescription="App Logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.176"
+        app:srcCompat="@drawable/avatar" />
 
     <TextView
         android:id="@+id/fragment_account_username"
