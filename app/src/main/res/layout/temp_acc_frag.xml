@@ -8,6 +8,21 @@
     tools:ignore="HardcodedText,RtlSymmetry">
 
 
+    <Button
+        android:id="@+id/fragment_account_logBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bordered"
+        android:paddingHorizontal="35dp"
+        android:text="Log OUT"
+        app:backgroundTint="#FF9700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.885"
+        tools:ignore="TextContrastCheck" />
+
     <ImageView
         android:id="@+id/fragment_account_imageView"
         android:layout_width="wrap_content"
@@ -15,9 +30,10 @@
         android:contentDescription="App Logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.128"
+        app:layout_constraintVertical_bias="0.127"
         app:srcCompat="@drawable/app_logo" />
 
     <ImageView
@@ -27,49 +43,27 @@
         android:contentDescription="App Logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.176"
         app:srcCompat="@drawable/avatar" />
 
     <TextView
-        android:id="@+id/fragment_account_username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="fname@lname"
-        android:textSize="20dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="296dp" />
-
-    <TextView
-        android:id="@+id/fragment_account_fullname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/account_squared_textview"
-        android:paddingHorizontal="12dp"
-        android:text="Noel Pinto"
-        android:textSize="19dp"
-        app:backgroundTint="#FF9700"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.527"
-        tools:ignore="TextContrastCheck" />
-
-    <TextView
         android:id="@+id/fragment_account_Sfullname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="329dp"
+        android:layout_marginEnd="335dp"
+        android:layout_marginBottom="413dp"
         android:text="Name"
         android:textColor="#689f38"
         android:textSize="18dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="372dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/fragment_account_phoneNo"
@@ -77,27 +71,50 @@
         android:layout_height="wrap_content"
         android:background="@drawable/account_squared_textview"
         android:paddingHorizontal="12dp"
-        android:text="+91 1234567890"
+        android:text="+91 "
         android:textSize="19dp"
         app:backgroundTint="#FF9700"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.997"
+        app:layout_constraintStart_toEndOf="@+id/fragment_account_SphoneNo"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.617"
+        app:layout_constraintVertical_bias="0.531"
         tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/fragment_account_SphoneNo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="392dp"
+        android:layout_marginEnd="263dp"
+        android:layout_marginBottom="350dp"
         android:text="Phone Number"
         android:textColor="#689f38"
         android:textSize="18dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="435dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fragment_account_Slocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="515dp"
+        android:layout_marginEnd="314dp"
+        android:layout_marginBottom="227dp"
+        android:text="Location"
+        android:textColor="#689f38"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/fragment_account_email"
@@ -105,27 +122,32 @@
         android:layout_height="wrap_content"
         android:background="@drawable/account_squared_textview"
         android:paddingHorizontal="12dp"
-        android:text="dummyemail@gmail.com"
+        android:text=""
         android:textSize="19dp"
         app:backgroundTint="#FF9700"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.996"
+        app:layout_constraintStart_toEndOf="@+id/fragment_account_Semail"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.699"
+        app:layout_constraintVertical_bias="0.612"
         tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/fragment_account_Semail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="453dp"
+        android:layout_marginEnd="319dp"
+        android:layout_marginBottom="289dp"
         android:text="Email-id"
         android:textColor="#689f38"
         android:textSize="18dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="493dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/fragment_account_location"
@@ -139,20 +161,26 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fragment_account_Slocation"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.787"
+        app:layout_constraintVertical_bias="0.695"
         tools:ignore="TextContrastCheck" />
 
     <TextView
-        android:id="@+id/fragment_account_Slocation"
+        android:id="@+id/fragment_account_fullname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Location"
-        android:textColor="#689f38"
-        android:textSize="18dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="555dp" />
+        android:background="@drawable/account_squared_textview"
+        android:paddingHorizontal="12dp"
+        android:text=""
+        android:textSize="19dp"
+        app:backgroundTint="#FF9700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/fragment_account_Sfullname"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.444"
+        tools:ignore="TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

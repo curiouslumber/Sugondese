@@ -1,5 +1,6 @@
 package com.example.sugondese;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -14,53 +15,58 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 
+import java.util.concurrent.Executor;
+
 public class AccountFragment extends Fragment {
 
-    Button Btn;
     TextView fullName, email, phone;
-    FirebaseAuth fAuth;
-    FirebaseFirestore fStore;
-    String userID;
+    String phone1,fname1,email1;
+
+    public AccountFragment(String phone, String fName, String email) {
+        phone1 = phone;
+        fname1 = fName;
+        email1 = email;
+    }
 
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        Btn = Btn.findViewById(R.id.logButton);
-//
-//        Btn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(getActivity(),LoginPage.class);
-//                startActivity(intent);
-//            }
-//        });
-
-
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_account, container, false);
+        View view = inflater.inflate(R.layout.temp_acc_frag, container, false);
 
-        Button testBtn = view.findViewById(R.id.fragment_account_alogButton);
+        Button testBtn = view.findViewById(R.id.fragment_account_logBtn);
+        fullName = view.findViewById(R.id.fragment_account_fullname);
+        email = view.findViewById(R.id.fragment_account_email);
+        phone = view.findViewById(R.id.fragment_account_phoneNo);
 
-           testBtn.setOnClickListener(
-                   new View.OnClickListener() {
-                       @Override
-                       public void onClick(View view) {
-                           startActivity(new Intent( AccountFragment.this.getContext()  ,LoginPage.class));
-                       }
-                   }
-           );
+        phone.setText(phone1);
+        email.setText(email1);
+        fullName.setText(fname1);
+
+
+
+                testBtn.setOnClickListener(
+                        new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                startActivity(new Intent(AccountFragment.this.getContext(), LoginPage.class));
+                            }
+                        }
+                );
+
 
 
         return view;
