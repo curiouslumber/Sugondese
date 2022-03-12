@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2075" />
+        <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.2075" />
+        <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2075" />
+        <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2075" />
         <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/activity_forgot_password.xml" value="0.2" />
         <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/activity_home_page.xml" value="0.15307971014492755" />
         <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/activity_login_page.xml" value="0.15307971014492755" />
@@ -12,6 +16,7 @@
         <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/activity_register_page.xml" value="0.2" />
         <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/fragment_account.xml" value="0.2" />
         <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/fragment_home_page.xml" value="0.2" />
+        <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/spinner_item.xml" value="0.2" />
         <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/temp_acc_frag.xml" value="0.22" />
         <entry key="..\:/Users/noelp/AndroidStudioProjects/Sugondese/app/src/main/res/drawable/edit_text_bordered.xml" value="0.2495" />
         <entry key="..\:/Users/noelp/AndroidStudioProjects/Sugondese/app/src/main/res/layout/activity_home_page.xml" value="0.4" />
@@ -19,7 +24,7 @@
         <entry key="..\:/Users/noelp/AndroidStudioProjects/Sugondese/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/noelp/AndroidStudioProjects/Sugondese/app/src/main/res/layout/activity_my_account.xml" value="0.264" />
         <entry key="..\:/Users/noelp/AndroidStudioProjects/Sugondese/app/src/main/res/layout/fragment_account.xml" value="0.24375" />
-        <entry key="..\:/Users/noelp/AndroidStudioProjects/Sugondese/app/src/main/res/layout/fragment_home_page.xml" value="0.4" />
+        <entry key="..\:/Users/noelp/AndroidStudioProjects/Sugondese/app/src/main/res/layout/fragment_home_page.xml" value="0.264" />
       </map>
     </option>
   </component>
