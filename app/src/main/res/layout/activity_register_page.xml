@@ -9,7 +9,7 @@
 
 
     <EditText
-        android:id="@+id/editTextPhoneNo"
+        android:id="@+id/activity_register_page_editTextPhoneNo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
@@ -25,11 +25,11 @@
         android:textColor="@color/black"
 
         android:textColorHint="#66000000"
-        app:layout_constraintStart_toStartOf="@+id/editTextRPassword2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextRPassword" />
+        app:layout_constraintStart_toStartOf="@+id/activity_register_page_editTextRPassword2"
+        app:layout_constraintTop_toBottomOf="@+id/activity_register_page_editTextRPassword" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/activity_register_page_imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="App Logo"
@@ -42,7 +42,7 @@
         tools:ignore="ImageContrastCheck" />
 
     <EditText
-        android:id="@+id/editTextName"
+        android:id="@+id/activity_register_page_editTextName"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -66,7 +66,7 @@
         app:layout_constraintVertical_bias="0.393" />
 
     <EditText
-        android:id="@+id/editTextEmail"
+        android:id="@+id/activity_register_page_editTextEmail"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -83,11 +83,11 @@
         android:textColor="@color/black"
         android:textColorHint="#66000000"
 
-        app:layout_constraintStart_toStartOf="@+id/editTextName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+        app:layout_constraintStart_toStartOf="@+id/activity_register_page_editTextName"
+        app:layout_constraintTop_toBottomOf="@+id/activity_register_page_editTextName" />
 
     <EditText
-        android:id="@+id/editTextRPassword"
+        android:id="@+id/activity_register_page_editTextRPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -103,11 +103,11 @@
         android:textColor="@color/black"
         android:textColorHint="#66000000"
 
-        app:layout_constraintStart_toStartOf="@+id/editTextEmail"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+        app:layout_constraintStart_toStartOf="@+id/activity_register_page_editTextEmail"
+        app:layout_constraintTop_toBottomOf="@+id/activity_register_page_editTextEmail" />
 
     <EditText
-        android:id="@+id/editTextRPassword2"
+        android:id="@+id/activity_register_page_editTextRPassword2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -123,11 +123,11 @@
         android:textColor="@color/black"
         android:textColorHint="#66000000"
 
-        app:layout_constraintStart_toStartOf="@+id/editTextRPassword"
-        app:layout_constraintTop_toBottomOf="@+id/editTextRPassword" />
+        app:layout_constraintStart_toStartOf="@+id/activity_register_page_editTextRPassword"
+        app:layout_constraintTop_toBottomOf="@+id/activity_register_page_editTextRPassword" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/activity_register_page_button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/edit_text_bordered"
@@ -143,7 +143,7 @@
         tools:ignore="TextContrastCheck" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/activity_register_page_textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Already a user? Sign In"
@@ -156,7 +156,7 @@
         app:layout_constraintVertical_bias="0.902" />
 
     <ProgressBar
-        android:id="@+id/progressBar"
+        android:id="@+id/activity_register_page_progressBar"
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

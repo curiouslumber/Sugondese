@@ -34,11 +34,11 @@ public class ForgotPassword extends AppCompatActivity {
         setContentView(R.layout.activity_forgot_password);
 
         fauth = FirebaseAuth.getInstance();
-        txtEmail = findViewById(R.id.ForgetEmail);
-        backToLogin = findViewById(R.id.backToLogin);
-        forgetBtn = findViewById(R.id.forgot_button);
+        txtEmail = findViewById(R.id.activity_forgot_password_ForgetEmail);
+        backToLogin = findViewById(R.id.activity_forgot_password_backToLogin);
+        forgetBtn = findViewById(R.id.activity_forgot_password_forgot_button);
 
-        TextView signUpTV = findViewById(R.id.textView);
+        TextView signUpTV = findViewById(R.id.activity_forgot_password_textView);
 
         String text = "Not a user yet? Sign Up";
         SpannableString spannableString = new SpannableString(text);
