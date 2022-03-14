@@ -55,7 +55,7 @@
                 android:layout_gravity="bottom|center_horizontal"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:text="1441 Pizzeria"
+                android:text="Chin Chin Chu"
                 android:textSize="20sp"
                 android:textStyle="bold" />
         </androidx.cardview.widget.CardView>
