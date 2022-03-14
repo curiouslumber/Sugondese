@@ -65,7 +65,8 @@ public class HomePage extends AppCompatActivity {
         profileIconBtn.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
-                    public void onClick(View view) { replaceFragment(new AccountFragment(phone,fName,email));
+                    public void onClick(View view) {
+                        replaceFragment(new AccountFragment(phone,fName,email));
                     }
                 }
         );
