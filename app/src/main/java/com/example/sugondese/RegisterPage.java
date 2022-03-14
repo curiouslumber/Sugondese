@@ -156,7 +156,7 @@ public class RegisterPage extends AppCompatActivity {
                                     Log.d("TAG","onSuccess: user Profile is created for"+ userID);
                                 }
                             });
-                            startActivity(new Intent(getApplicationContext(),MyAccount.class));
+                            startActivity(new Intent(getApplicationContext(),LoginPage.class));
 
                         }
 

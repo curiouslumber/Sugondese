@@ -4,40 +4,40 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2075" />
-        <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/drawable/circle.xml" value="0.1" />
         <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.2075" />
         <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2075" />
         <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2075" />
-        <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/activity_burger_category.xml" value="0.14356884057971014" />
-        <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/activity_chinese_category.xml" value="0.2" />
         <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/activity_forgot_password.xml" value="0.2" />
         <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/activity_home_page.xml" value="0.15307971014492755" />
-        <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/activity_indian_category.xml" value="0.2" />
         <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/activity_login_page.xml" value="0.15307971014492755" />
         <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/activity_main.xml" value="0.13333333333333333" />
         <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/activity_main2.xml" value="0.2" />
         <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/activity_my_account.xml" value="0.2" />
-        <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/activity_pasta_category.xml" value="0.1" />
-        <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/activity_pizza_category.xml" value="0.2" />
         <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/activity_register_page.xml" value="0.2" />
         <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/fragment_account.xml" value="0.2" />
-        <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/fragment_burger.xml" value="0.22" />
-        <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/fragment_chinese.xml" value="0.22" />
-        <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/fragment_home_page.xml" value="0.22" />
-        <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/fragment_italian.xml" value="0.22" />
-        <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/fragment_pizza.xml" value="0.2" />
+        <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/fragment_home_page.xml" value="0.2" />
         <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/spinner_item.xml" value="0.2" />
         <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/temp_acc_frag.xml" value="0.22" />
-        <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/temp_category_icons_pg.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/temp_frag_category_page.xml" value="0.1" />
-        <entry key="..\:/Users/Hemant/AndroidStudioProjects/Sugondese/app/src/main/res/layout/temp_homepage_frag.xml" value="0.22" />
         <entry key="..\:/Users/noelp/AndroidStudioProjects/Sugondese/app/src/main/res/drawable/edit_text_bordered.xml" value="0.2495" />
+        <entry key="..\:/Users/noelp/AndroidStudioProjects/Sugondese/app/src/main/res/layout/activity_burger_category.xml" value="0.20526315789473684" />
+        <entry key="..\:/Users/noelp/AndroidStudioProjects/Sugondese/app/src/main/res/layout/activity_chinese_category.xml" value="0.2" />
         <entry key="..\:/Users/noelp/AndroidStudioProjects/Sugondese/app/src/main/res/layout/activity_home_page.xml" value="0.4" />
         <entry key="..\:/Users/noelp/AndroidStudioProjects/Sugondese/app/src/main/res/layout/activity_homepage.xml" value="0.264" />
+        <entry key="..\:/Users/noelp/AndroidStudioProjects/Sugondese/app/src/main/res/layout/activity_italian_category.xml" value="0.20526315789473684" />
         <entry key="..\:/Users/noelp/AndroidStudioProjects/Sugondese/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/noelp/AndroidStudioProjects/Sugondese/app/src/main/res/layout/activity_my_account.xml" value="0.264" />
+        <entry key="..\:/Users/noelp/AndroidStudioProjects/Sugondese/app/src/main/res/layout/activity_pizza_category.xml" value="0.20526315789473684" />
+        <entry key="..\:/Users/noelp/AndroidStudioProjects/Sugondese/app/src/main/res/layout/activity_product_page.xml" value="0.17763157894736842" />
+        <entry key="..\:/Users/noelp/AndroidStudioProjects/Sugondese/app/src/main/res/layout/activity_register_page.xml" value="0.17532467532467533" />
         <entry key="..\:/Users/noelp/AndroidStudioProjects/Sugondese/app/src/main/res/layout/fragment_account.xml" value="0.24375" />
+        <entry key="..\:/Users/noelp/AndroidStudioProjects/Sugondese/app/src/main/res/layout/fragment_burger.xml" value="0.17763157894736842" />
+        <entry key="..\:/Users/noelp/AndroidStudioProjects/Sugondese/app/src/main/res/layout/fragment_chinese.xml" value="0.1" />
         <entry key="..\:/Users/noelp/AndroidStudioProjects/Sugondese/app/src/main/res/layout/fragment_home_page.xml" value="0.264" />
+        <entry key="..\:/Users/noelp/AndroidStudioProjects/Sugondese/app/src/main/res/layout/fragment_italian.xml" value="0.20526315789473684" />
+        <entry key="..\:/Users/noelp/AndroidStudioProjects/Sugondese/app/src/main/res/layout/fragment_pizza.xml" value="0.20526315789473684" />
+        <entry key="..\:/Users/noelp/AndroidStudioProjects/Sugondese/app/src/main/res/layout/product_page.xml" value="0.264" />
+        <entry key="..\:/Users/noelp/AndroidStudioProjects/Sugondese/app/src/main/res/layout/temp_acc_frag.xml" value="0.17763157894736842" />
+        <entry key="..\:/Users/noelp/AndroidStudioProjects/Sugondese/app/src/main/res/layout/temp_category_icons_pg.xml" value="0.20526315789473684" />
       </map>
     </option>
   </component>

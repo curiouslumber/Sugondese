@@ -13,6 +13,7 @@
 
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/activity_italian_category_creamCentreCardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -24,10 +25,10 @@
             app:cardUseCompatPadding="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.526"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.723">
+            app:layout_constraintVertical_bias="0.037">
 
             <!--
             In the above cardview widget
@@ -40,14 +41,14 @@
             below are the two widgets imageview and text view we are displaying inside our card view.
             -->
             <ImageView
-                android:id="@+id/img2"
-                android:layout_width="150dp"
-                android:layout_height="200dp"
+                android:id="@+id/img0"
+                android:layout_width="325dp"
+                android:layout_height="238dp"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:contentDescription="@string/app_name"
                 android:paddingBottom="30dp"
-                android:src="@drawable/app_logo" />
+                android:src="@drawable/italian1" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -55,13 +56,13 @@
                 android:layout_gravity="bottom|center_horizontal"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:text="@string/app_name"
+                android:text="Cream Centre"
                 android:textSize="20sp"
                 android:textStyle="bold" />
-
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/activity_italian_category_newYorkerRestaurantCardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -73,10 +74,10 @@
             app:cardUseCompatPadding="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.842"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.056">
+            app:layout_constraintVertical_bias="0.774">
 
             <!--
             In the above cardview widget
@@ -89,14 +90,14 @@
             below are the two widgets imageview and text view we are displaying inside our card view.
             -->
             <ImageView
-                android:id="@+id/img"
-                android:layout_width="150dp"
-                android:layout_height="200dp"
+                android:id="@+id/img1"
+                android:layout_width="388dp"
+                android:layout_height="219dp"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:contentDescription="@string/app_name"
-                android:paddingBottom="30dp"
-                android:src="@drawable/app_logo" />
+                android:paddingBottom="35dp"
+                android:src="@drawable/italian3" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -104,10 +105,11 @@
                 android:layout_gravity="bottom|center_horizontal"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:text="@string/app_name"
+                android:text="New Yorker Restaurant"
                 android:textSize="20sp"
                 android:textStyle="bold" />
         </androidx.cardview.widget.CardView>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
