@@ -1,5 +1,6 @@
 package com.example.sugondese;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,11 +8,13 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
+import android.widget.Button;
 
 
 public class HomePageFragment extends Fragment {
+
+    Button pizzaBtn,burgerBtn,chineseBtn,italianBtn;
+
 
 
 
@@ -24,32 +27,48 @@ public class HomePageFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_home_page, container, false);
-        String [] values1 = {"Andheri","Bandra","Dadar","Kurla",};
-        String [] values2 = {"800-1000","1000-1500","1500-2000"};
-        String [] values3 = {"3.0+","3.5+","4.0+"};
-        Spinner spinner1 = view.findViewById(R.id.spinner_location);
-        Spinner spinner2 = view.findViewById(R.id.spinner_price);
-        Spinner spinner3 = view.findViewById(R.id.spinner_rating);
-
-        ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item,values1);
-        adapter1.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
-        spinner1.setAdapter(adapter1);
-
-        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item,values2);
-        adapter2.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
-        spinner2.setAdapter(adapter2);
-
-        ArrayAdapter<String> adapter3 = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item,values3);
-        adapter3.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
-        spinner3.setAdapter(adapter3);
+        View view = inflater.inflate(R.layout.temp_category_icons_pg, container, false);
+        pizzaBtn = view.findViewById(R.id.pizzaBtn);
+        burgerBtn = view.findViewById(R.id.burgerBtn);
+        chineseBtn = view.findViewById(R.id.chineseBtn);
+        italianBtn = view.findViewById(R.id.italianBtn);
 
 
 
+        pizzaBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomePageFragment.this.getContext(), Pizza_Category.class));
+
+            }
+        });
+
+        burgerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomePageFragment.this.getContext(), Burger_Category.class));
+            }
+        });
+
+        chineseBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomePageFragment.this.getContext(),Chinese_Category.class));
+            }
+        });
+
+        italianBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomePageFragment.this.getContext(), Italian_Category.class));
+            }
+        });
 
 
 
         return view;
 
     }
+
+
 }
