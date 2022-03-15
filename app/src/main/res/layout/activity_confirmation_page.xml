@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+  <ImageView
+      android:id="@+id/imageView2"
+      android:layout_width="292dp"
+      android:layout_height="268dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.495"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.103"
+      app:srcCompat="@drawable/tick" />
+
+  <TextView
+      android:id="@+id/blurt"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="32dp"
+      android:text="Your booking has been confirmed!"
+      android:textColor="#689f38"
+      android:textSize="20dp"
+      app:layout_constraintEnd_toEndOf="@+id/imageView2"
+      app:layout_constraintHorizontal_bias="0.461"
+      app:layout_constraintStart_toStartOf="@+id/imageView2"
+      app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+  <TextView
+      android:id="@+id/deet"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Details:"
+      android:textColor="#689f38"
+      android:textSize="20sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.154"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.578" />
+
+  <TextView
+      android:id="@+id/confirm_page_rest_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:text="Restaurant Name"
+      android:textColor="#689f38"
+      android:textSize="20sp"
+      app:layout_constraintStart_toStartOf="@+id/deet"
+      app:layout_constraintTop_toBottomOf="@+id/deet" />
+
+  <TextView
+      android:id="@+id/confirm_page_date"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:text="Date"
+      android:textColor="#689f38"
+      android:textSize="20sp"
+      app:layout_constraintStart_toStartOf="@+id/confirm_page_rest_name"
+      app:layout_constraintTop_toBottomOf="@+id/confirm_page_rest_name" />
+
+  <TextView
+      android:id="@+id/confirm_page_time"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:text="Time"
+      android:textColor="#689f38"
+      android:textSize="20sp"
+      app:layout_constraintStart_toStartOf="@+id/confirm_page_date"
+      app:layout_constraintTop_toBottomOf="@+id/confirm_page_date" />
+
+  <TextView
+      android:id="@+id/confirm_page_people"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:text="Number of People"
+      android:textColor="#689f38"
+      android:textSize="20sp"
+      app:layout_constraintStart_toStartOf="@+id/confirm_page_time"
+      app:layout_constraintTop_toBottomOf="@+id/confirm_page_time" />
+
+  <Button
+      android:id="@+id/confirm_page_goHome"
+
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/edit_text_bordered"
+
+      android:paddingHorizontal="35dp"
+      android:text="Go to home"
+      app:backgroundTint="#FF9700"
+
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.497"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.945"
+      tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

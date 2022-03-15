@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 public class ProductPage extends AppCompatActivity {
 
-    String[] pizzeria = {"Pizzeria", "Established in 2015 with a concept to bring the authenticity of Italian wood-fired pizza to India.\n" +
+    String[] pizzeria = {"1441 Pizzeria", "Established in 2015 with a concept to bring the authenticity of Italian wood-fired pizza to India.\n" +
             "\n" +
             "1441 Pizzeria a venture by Trofi Chain Factory Private Limited is the first initiative from this culinary art house. It will be a one of its kind, traditional Italian Wood Fired Pizzeria with all of its food being made solely in the wood oven. The concept and menu have been designed and created by the Italian Pizza Master chef Renato Viola who will also be training the chefs personally.", "@drawable/pizza"};
     String[] smokeHouseDeli = {"Smoke House Deli", "We serve comfort food with a deep focus on ethically sourced local ingredients that are healthy, organic, and wholesome. Our produce comes straight from local farms across the country, so that you can enjoy the best of both flavour and health, handmade from scratch.", "@drawable/pizza2"};
@@ -52,7 +52,11 @@ public class ProductPage extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        startActivity(new Intent(ProductPage.this, BookingPage.class));
+                        Intent intent1 = new Intent(ProductPage.this,BookingPage.class);
+                        String Data = productTitle.getText().toString();
+                        intent1.putExtra("abc",Data);
+                        startActivity(intent1);
+                        finish();
                     }
                 }
         );
