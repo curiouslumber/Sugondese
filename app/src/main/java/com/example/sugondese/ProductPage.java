@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.graphics.drawable.LayerDrawable;
 import android.os.Bundle;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,10 +22,11 @@ public class ProductPage extends AppCompatActivity {
     String[] chinChinChu = {"Chin Chin Chu", "Comfortable Seating Area, Gastronomical Experience, Fancy Crowd, Family Place, Good Quality Food, Courteous Staff. Come try our Crispy Prawn Cheung Fun, Chili Tofu, Duck Salad, Balinese Curry, Watermelon Drink, Sushi Platter to name a few !", "@drawable/chinese2"};
     String[] tapRestro = {"TAP Restro", "\"TAP '' Resto Bar at its best. Tap is an amalgamation of Lounge bar, sports bar, pub & a nightclub. A bold multi faceted venture by China Gate Group. Guests can choose from either unwinding, social gathering, partying hard or indulging themselves in any of featured gaming activities such as Dart machines, pool tables and more.  A new innovative 3 tier menu pricing concept makes it a wallet friendly affair. A haven for foodies showcasing a multi cuisine menu comprising of mexican, conti, indian & chinese offerings", "@drawable/chinese3"};
     String[] creamCentre = {"Cream Centre", "Cream Centre is a veg bistro serving global cuisine interpreted through an Indian lens. Over the last 63 Years, we have been serving an ever-evolving menu of casual comfort food that is created by a team of people who are passionate about discovering new tastes and ingredients, while staying true to our Indian roots.", "@drawable/italian1"};
-    String[] newYorkerRestaurant = {"New Yorker Restaurant", "Perfect Location, Relaxed Atmosphere, Ample Seating Area, Decent Ambience, Family Restaurant. Burgers, pizzas, nachos & salads are served at this laid-back quick-serve restaurant.c", "@drawable/italian3"};
+    String[] newYorkerRestaurant = {"New Yorker Restaurant", "Perfect Location, Relaxed Atmosphere, Ample Seating Area, Decent Ambience, Family Restaurant. Burgers, pizzas, nachos & salads are served at this laid-back quick-serve restaurant.", "@drawable/italian3"};
 
     TextView productTitle, productDes;
     ImageView productImg;
+    RatingBar rt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +41,9 @@ public class ProductPage extends AppCompatActivity {
         productTitle = findViewById(R.id.product_page_title);
         productDes = findViewById(R.id.product_page_desc);
         productImg = findViewById(R.id.product_page_imageView);
+        rt = findViewById(R.id.ratingBar);
+
+
 
         if(name.equals("pizzeria"))
         {
@@ -46,6 +52,7 @@ public class ProductPage extends AppCompatActivity {
             int imageResource = getResources().getIdentifier(pizzeria[2], null, getPackageName());
             Drawable img = getResources().getDrawable(imageResource);
             productImg.setImageDrawable(img);
+            rt.setRating((float) 3.5);
         }
         if(name.equals("smokeHouseDeli"))
         {
@@ -54,6 +61,7 @@ public class ProductPage extends AppCompatActivity {
             int imageResource = getResources().getIdentifier(smokeHouseDeli[2], null, getPackageName());
             Drawable img = getResources().getDrawable(imageResource);
             productImg.setImageDrawable(img);
+            rt.setRating((float) 4.0);
         }
         if(name.equals("mcDonald"))
         {
@@ -62,6 +70,7 @@ public class ProductPage extends AppCompatActivity {
             int imageResource = getResources().getIdentifier(mcDonald[2], null, getPackageName());
             Drawable img = getResources().getDrawable(imageResource);
             productImg.setImageDrawable(img);
+            rt.setRating((float) 3.0);
         }
         if(name.equals("burgerKing"))
         {
@@ -70,6 +79,7 @@ public class ProductPage extends AppCompatActivity {
             int imageResource = getResources().getIdentifier(burgerKing[2], null, getPackageName());
             Drawable img = getResources().getDrawable(imageResource);
             productImg.setImageDrawable(img);
+            rt.setRating((float) 4.1);
         }
         if(name.equals("chinChinChu"))
         {
@@ -78,6 +88,7 @@ public class ProductPage extends AppCompatActivity {
             int imageResource = getResources().getIdentifier(chinChinChu[2], null, getPackageName());
             Drawable img = getResources().getDrawable(imageResource);
             productImg.setImageDrawable(img);
+            rt.setRating((float) 3.7);
         }
         if(name.equals("tapRestro")) {
             productTitle.setText(tapRestro[0]);
@@ -85,6 +96,7 @@ public class ProductPage extends AppCompatActivity {
             int imageResource = getResources().getIdentifier(tapRestro[2], null, getPackageName());
             Drawable img = getResources().getDrawable(imageResource);
             productImg.setImageDrawable(img);
+            rt.setRating((float) 4.2);
         }
 
         if(name.equals("creamCentre")) {
@@ -93,6 +105,7 @@ public class ProductPage extends AppCompatActivity {
             int imageResource = getResources().getIdentifier(creamCentre[2], null, getPackageName());
             Drawable img = getResources().getDrawable(imageResource);
             productImg.setImageDrawable(img);
+            rt.setRating((float) 2.7);
         }
 
         if(name.equals("newYorkerRestaurant")) {
@@ -101,6 +114,7 @@ public class ProductPage extends AppCompatActivity {
             int imageResource = getResources().getIdentifier(newYorkerRestaurant[2], null, getPackageName());
             Drawable img = getResources().getDrawable(imageResource);
             productImg.setImageDrawable(img);
+            rt.setRating((float) 4.0);
         }
 
 
