@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.LayerDrawable;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
@@ -27,6 +29,7 @@ public class ProductPage extends AppCompatActivity {
     TextView productTitle, productDes;
     ImageView productImg;
     RatingBar rt;
+    Button bookingBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +44,18 @@ public class ProductPage extends AppCompatActivity {
         productTitle = findViewById(R.id.product_page_title);
         productDes = findViewById(R.id.product_page_desc);
         productImg = findViewById(R.id.product_page_imageView);
+        bookingBtn = findViewById(R.id.product_page_Btn);
+
         rt = findViewById(R.id.ratingBar);
+
+        bookingBtn.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(ProductPage.this, BookingPage.class));
+                    }
+                }
+        );
 
 
 
