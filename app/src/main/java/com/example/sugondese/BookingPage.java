@@ -19,7 +19,11 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.tabs.TabLayout;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class BookingPage extends AppCompatActivity
@@ -33,6 +37,8 @@ public class BookingPage extends AppCompatActivity
     String[] times = {"12 PM","1 PM","2 PM","3 PM","4 PM","5 PM","6 PM",
     "7 PM","8 PM","9 PM","10 PM"};
 
+    FirebaseFirestore db;
+    String time, bookDate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +51,7 @@ public class BookingPage extends AppCompatActivity
         spin = findViewById(R.id.spinner);
         confirmBtn = findViewById(R.id.booking_confirmation);
 
-        MyDbHandler mydbhandler = new MyDbHandler(this, null, null, 1);
+        db = FirebaseFirestore.getInstance();
 
         Bundle bundle = getIntent().getExtras();
         String rest_name = bundle.getString("abc");
@@ -59,7 +65,7 @@ public class BookingPage extends AppCompatActivity
         calendar.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView calendarView, int i, int i1, int i2) {
-                String bookDate = i + "/" + i1 + "/" + "i2";
+                 bookDate = i + "/" + i1 + "/" + i2;
 
             }
         });
@@ -67,25 +73,22 @@ public class BookingPage extends AppCompatActivity
         confirmBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 String num_people = noPeople.getText().toString();
+                if(!num_people.equals("") ) {
 
-                if (TextUtils.isEmpty(num_people)){
-                    noPeople.setError("Specify No. of People");
+                    if (TextUtils.isEmpty(num_people) ) {
+                        noPeople.setError("Specify No. of People");
+                    }
+
+                    if (Integer.parseInt(num_people) > 20) {
+                        noPeople.setError("Max Capacity is 20");
+                    }
                 }
+//                int quantity = Integer.parseInt(num_people);
 
-                if (Integer.parseInt(num_people) > 20){
-                    noPeople.setError("Max Capacity is 20");
-                }
+                addDataToFirestore(rest_name, Integer.parseInt(num_people),time, bookDate);
 
-                int quantity = Integer.parseInt(num_people);
-                Product product = new Product("1441 Pizzeria", quantity);
-                Boolean test = mydbhandler.addProducts(product);
-                if (test)
-                    Toast.makeText(getApplicationContext(), "Record inserted" + test, Toast.LENGTH_LONG).show();
-                else
-                    Toast.makeText(getApplicationContext(), "<<<---ERROR--->>" + test, Toast.LENGTH_LONG).show();
-
-                startActivity(new Intent(BookingPage.this,ConfirmationPage.class));
 
             }
         });
@@ -95,7 +98,7 @@ public class BookingPage extends AppCompatActivity
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-        String text = spin.getSelectedItem().toString();
+        time = spin.getSelectedItem().toString();
     }
 
     @Override
@@ -103,5 +106,31 @@ public class BookingPage extends AppCompatActivity
 
     }
 
+    private void addDataToFirestore(String restName, int quantity,  String date, String time) {
 
+        // creating a collection reference
+        // for our Firebase Firetore database.
+        CollectionReference dbCourses = db.collection("booking_details");
+
+        // adding our data to our courses object class.
+        BookingDetails courses = new BookingDetails(restName,  quantity,  date, time);
+
+        // below method is use to add data to Firebase Firestore.
+        dbCourses.add(courses).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+            @Override
+            public void onSuccess(DocumentReference documentReference) {
+                // after the data addition is successful
+                // we are displaying a success toast message.
+                Toast.makeText(getApplicationContext(), "Your Course has been added to Firebase Firestore", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(BookingPage.this,ConfirmationPage.class));
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                // this method is called when the data addition process is failed.
+                // displaying a toast message when data addition is failed.
+                Toast.makeText(getApplicationContext(), "Fail to add course \n" + e, Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
 }

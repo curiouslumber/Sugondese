@@ -8,10 +8,16 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.firebase.firestore.FirebaseFirestore;
+
 public class ConfirmationPage extends AppCompatActivity {
 
     TextView restName,date,time,num_people;
     Button homeBtn;
+    String userIdS;
+    String restNameS, timeS, dateS;
+    int quantity;
+    FirebaseFirestore db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,15 +29,7 @@ public class ConfirmationPage extends AppCompatActivity {
         time = findViewById(R.id.confirm_page_time);
         num_people = findViewById(R.id.confirm_page_people);
         homeBtn = findViewById(R.id.confirm_page_goHome);
-
-        MyDbHandler mydbhandler = new MyDbHandler(this, null, null, 1);
-
-        Product product = mydbhandler.findProduct("1441 Pizzeria");
-        if (product != null) {
-            num_people.setText(String.valueOf(product.get_quantity()));
-        } else {
-            num_people.setText("No match found");
-        }
+        db = FirebaseFirestore.getInstance();
 
         homeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
