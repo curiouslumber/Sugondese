@@ -7,11 +7,13 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -29,6 +31,9 @@ public class HomePage extends AppCompatActivity {
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     String userID,phone,email,fName;
+    TextView homeTV,profileTV;
+    String homeColor = "white";
+    String profileColor = "white";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,8 +43,12 @@ public class HomePage extends AppCompatActivity {
 
         homepageIconBtn = findViewById(R.id.activity_home_page_homeFragmentBtn);
         profileIconBtn = findViewById(R.id.activity_home_page_profileFragmentBtn);
+        homeTV = findViewById(R.id.activity_home_page_home);
+        profileTV = findViewById(R.id.activity_home_page_profile);
         replaceFragment(new HomePageFragment());
 
+        homeTV.setTextColor(Color.parseColor("#FF9700"));
+        homeColor = "orange";
         fStore = FirebaseFirestore.getInstance();
         fAuth = FirebaseAuth.getInstance();
         userID = fAuth.getCurrentUser().getUid();
@@ -57,7 +66,14 @@ public class HomePage extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
+                        if(profileColor.equals("orange")){
+                            profileTV.setTextColor(Color.parseColor("#545454"));
+                            profileColor = "white";
+                        }
+                        homeTV.setTextColor(Color.parseColor("#FF9700"));
+                        homeColor = "orange";
                         replaceFragment(new HomePageFragment());
+
                     }
                 }
         );
@@ -66,6 +82,12 @@ public class HomePage extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
+                        if(homeColor.equals("orange")){
+                            homeTV.setTextColor(Color.parseColor("#545454"));
+                            homeColor = "white";
+                        }
+                        profileTV.setTextColor(Color.parseColor("#FF9700"));
+                        profileColor = "orange";
                         replaceFragment(new AccountFragment(phone,fName,email));
                     }
                 }
