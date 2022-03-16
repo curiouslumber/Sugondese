@@ -26,6 +26,11 @@ import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
+
 public class BookingPage extends AppCompatActivity
         implements AdapterView.OnItemSelectedListener {
 
@@ -66,7 +71,8 @@ public class BookingPage extends AppCompatActivity
         calendar.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView calendarView, int i, int i1, int i2) {
-                 bookDate = i + "/" + i1 + "/" + i2;
+                 bookDate = i2 + "/" + i1 + "/" + i;
+
 
             }
         });
@@ -86,6 +92,14 @@ public class BookingPage extends AppCompatActivity
                         noPeople.setError("Max Capacity is 20");
                     }
                 }
+
+                if (bookDate.equals(" ")){
+                    Date c = Calendar.getInstance().getTime();
+//                    System.out.println("Current time => " + c);
+                    SimpleDateFormat df = new SimpleDateFormat("dd/MMM/yyyy", Locale.getDefault());
+                     bookDate = df.format(c);
+                }
+
 //                int quantity = Integer.parseInt(num_people);
 
 //                addDataToFirestore(rest_name, Integer.parseInt(num_people),time, bookDate);

@@ -39,7 +39,7 @@ public class ConfirmationPage extends AppCompatActivity {
         restName.setText(restNameS);
         time.setText(timeS);
         date.setText(dateS);
-        num_people.setText(quantity );
+        num_people.setText(quantity+" people");
 
         homeBtn.setOnClickListener(new View.OnClickListener() {
             @Override

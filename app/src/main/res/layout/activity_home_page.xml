@@ -50,7 +50,7 @@
                     app:srcCompat="@drawable/home_icon" />
 
                 <TextView
-                    android:id="@+id/activity_home_page_textView4"
+                    android:id="@+id/activity_home_page_home"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Home"
@@ -120,7 +120,7 @@
                     />
 
                 <TextView
-                    android:id="@+id/activity_home_page_textView5"
+                    android:id="@+id/activity_home_page_profile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Profile"
