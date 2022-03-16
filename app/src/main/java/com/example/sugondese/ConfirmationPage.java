@@ -16,7 +16,7 @@ public class ConfirmationPage extends AppCompatActivity {
     Button homeBtn;
     String userIdS;
     String restNameS, timeS, dateS;
-    int quantity;
+    String quantity;
     FirebaseFirestore db;
 
     @Override
@@ -30,6 +30,16 @@ public class ConfirmationPage extends AppCompatActivity {
         num_people = findViewById(R.id.confirm_page_people);
         homeBtn = findViewById(R.id.confirm_page_goHome);
         db = FirebaseFirestore.getInstance();
+
+        Bundle bundle = getIntent().getExtras();
+        restNameS = bundle.getString("final_restName");
+        timeS = bundle.getString("final_restTime");
+        dateS = bundle.getString("final_restDate");
+        quantity =  bundle.getString("final_numPeople") ;
+        restName.setText(restNameS);
+        time.setText(timeS);
+        date.setText(dateS);
+        num_people.setText(quantity );
 
         homeBtn.setOnClickListener(new View.OnClickListener() {
             @Override

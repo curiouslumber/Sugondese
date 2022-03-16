@@ -39,9 +39,9 @@ public class HomePage extends AppCompatActivity {
         homepageIconBtn = findViewById(R.id.activity_home_page_homeFragmentBtn);
         profileIconBtn = findViewById(R.id.activity_home_page_profileFragmentBtn);
         replaceFragment(new HomePageFragment());
-        fAuth = FirebaseAuth.getInstance();
-        fStore = FirebaseFirestore.getInstance();
 
+        fStore = FirebaseFirestore.getInstance();
+        fAuth = FirebaseAuth.getInstance();
         userID = fAuth.getCurrentUser().getUid();
         DocumentReference docRef = fStore.collection("users").document(userID);
         docRef.addSnapshotListener( this, new EventListener<DocumentSnapshot>() {

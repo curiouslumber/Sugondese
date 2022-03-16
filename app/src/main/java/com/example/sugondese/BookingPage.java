@@ -38,7 +38,8 @@ public class BookingPage extends AppCompatActivity
     "7 PM","8 PM","9 PM","10 PM"};
 
     FirebaseFirestore db;
-    String time, bookDate;
+    String time, bookDate = " ";
+    String num_people;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,7 +75,7 @@ public class BookingPage extends AppCompatActivity
             @Override
             public void onClick(View view) {
 
-                String num_people = noPeople.getText().toString();
+                num_people = noPeople.getText().toString();
                 if(!num_people.equals("") ) {
 
                     if (TextUtils.isEmpty(num_people) ) {
@@ -87,8 +88,14 @@ public class BookingPage extends AppCompatActivity
                 }
 //                int quantity = Integer.parseInt(num_people);
 
-                addDataToFirestore(rest_name, Integer.parseInt(num_people),time, bookDate);
+//                addDataToFirestore(rest_name, Integer.parseInt(num_people),time, bookDate);
 
+                Intent j = new Intent(BookingPage.this,ConfirmationPage.class);
+                j.putExtra("final_restName", rest_name);
+                j.putExtra("final_restDate", bookDate );
+                j.putExtra("final_restTime", time);
+                j.putExtra("final_numPeople", num_people);
+                 startActivity(j);
 
             }
         });
@@ -104,33 +111,5 @@ public class BookingPage extends AppCompatActivity
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
 
-    }
-
-    private void addDataToFirestore(String restName, int quantity,  String date, String time) {
-
-        // creating a collection reference
-        // for our Firebase Firetore database.
-        CollectionReference dbCourses = db.collection("booking_details");
-
-        // adding our data to our courses object class.
-        BookingDetails courses = new BookingDetails(restName,  quantity,  date, time);
-
-        // below method is use to add data to Firebase Firestore.
-        dbCourses.add(courses).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-            @Override
-            public void onSuccess(DocumentReference documentReference) {
-                // after the data addition is successful
-                // we are displaying a success toast message.
-                Toast.makeText(getApplicationContext(), "Your Course has been added to Firebase Firestore", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(BookingPage.this,ConfirmationPage.class));
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                // this method is called when the data addition process is failed.
-                // displaying a toast message when data addition is failed.
-                Toast.makeText(getApplicationContext(), "Fail to add course \n" + e, Toast.LENGTH_SHORT).show();
-            }
-        });
     }
 }
