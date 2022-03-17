@@ -69,7 +69,7 @@
         android:minHeight="48dp"
         android:paddingVertical="10dp"
         android:paddingStart="14dp"
-
+        android:textColor="@color/black"
         android:textColorHint="#66000000"
         app:layout_constraintStart_toStartOf="@+id/activity_login_page_editTextEmail"
         app:layout_constraintTop_toBottomOf="@+id/activity_login_page_editTextEmail" />
