@@ -82,7 +82,7 @@ public class BookingPage extends AppCompatActivity
             public void onClick(View view) {
 
                 num_people = noPeople.getText().toString();
-                if(!num_people.equals("") ) {
+                if(!num_people.equals("")) {
 
                     if (TextUtils.isEmpty(num_people) ) {
                         noPeople.setError("Specify No. of People");
@@ -91,6 +91,10 @@ public class BookingPage extends AppCompatActivity
                     if (Integer.parseInt(num_people) > 20) {
                         noPeople.setError("Max Capacity is 20");
                     }
+                }
+                else {
+                    noPeople.setError("Specify No. of People");
+                    return;
                 }
 
                 if (bookDate.equals(" ")){
